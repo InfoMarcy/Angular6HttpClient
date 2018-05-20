@@ -1,0 +1,107 @@
+<div class="container">
+
+    <div class="row">
+    
+      <div class="col-md-10 offset-1">
+<form>
+  <div class="form-group">
+    
+      <div class="row">
+        <h3 class="col-12">Datos Generales</h3>
+    <div class="form-group col-md-6">
+      <label for="name">Name</label>
+      <input type="text" [ngModel]="user.name" name="name" class="form-control" id="name">
+    </div>
+
+
+    <div class="form-group col-md-6">
+      <label for="username">Username</label>
+      <input type="text" [ngModel]="user.username" name="username" class="form-control" id="username">
+    </div>
+
+    <div class="form-group col-md-6">
+      <label for="email">Email</label>
+      <input type="email" [ngModel]="user.email" name="email" class="form-control" id="email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="phone">Phone Number</label>
+      <input type="text" [ngModel]="user.phone" name="phone" class="form-control" id="phone">
+    </div>
+
+  </div>
+  </div>
+
+
+  <div class="form-group">
+    <div class="row">
+      <h3 class="col-12">Address</h3>
+      <div class="form-group col-md-3">
+        <label for="Address">Street</label>
+        <input type="text" [ngModel]="user.address.street" name="address.street" class="form-control" id="Address">
+      </div>
+
+      <div class="form-group col-md-4">
+        <label for="suite">Suite</label>
+        <input type="text" [ngModel]="user.address.suite" name="address.suite" class="form-control" id="suite" placeholder="Apartment, studio, or floor">
+      </div>
+
+
+
+      <div class="form-group col-md-3">
+        <label for="city">City</label>
+        <input type="text" [ngModel]="user.address.city" name="address.city" class="form-control" id="city">
+      </div>
+
+      <div class="form-group col-md-2">
+        <label for="zipcode">Codigo Postal</label>
+        <input type="text" [ngModel]="user.address.zipcode" name="address.zipcode" class="form-control" id="zipcode">
+      </div>
+
+    </div>
+  </div>
+      <div class="form-group">
+        <div class="row">
+          <h3 class="col-12">Location</h3>
+          <div class="form-group col-md-6">
+            <label for="lat">Latitud</label>
+            <input type="text" [ngModel]="user.address.geo.lat" name="address.geo.lat" class="form-control" id="lat">
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="lng">Longitud</label>
+            <input type="text" [ngModel]="user.address.geo.lng" name="address.geo.lng" class="form-control" id="lng">
+          </div>
+        </div>
+      </div>
+
+
+  <div class="form-group">
+    <div class="row">
+
+      <h3 class="col-12">Company</h3>
+      <div class="form-group col-md-4">
+        <label for="company">Name</label>
+        <input [ngModel]="user.company.name" name="company" type="text" class="form-control" id="company">
+      </div>
+
+      <div class="form-group col-md-4">
+        <label for="company">Catch Phrase</label>
+        <input [ngModel]="user.company.catchPhrase" name="company.catchPhrase" type="text" class="form-control" id="company">
+      </div>
+
+      <div class="form-group col-md-4">
+        <label for="company">Slogan</label>
+        <input [ngModel]="user.company.bs" name="company.bs" type="text" class="form-control" id="company">
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+</form>
+
+</div>
+</div>
+</div>
